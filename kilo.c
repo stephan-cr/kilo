@@ -34,7 +34,7 @@
 
 #define KILO_VERSION "0.0.1"
 
-#define _BSD_SOURCE
+#define _DEFAULT_SOURCE
 #define _GNU_SOURCE
 
 #include <termios.h>
@@ -50,6 +50,7 @@
 #include <unistd.h>
 #include <stdarg.h>
 #include <fcntl.h>
+#include <time.h>
 
 /* Syntax highlight types */
 #define HL_NORMAL 0
