@@ -1,7 +1,9 @@
+CFLAGS ?= -Wall -W -pedantic
+
 all: kilo
 
 kilo: kilo.c
-	$(CC) -o kilo kilo.c -Wall -W -pedantic -std=c99
+	$(CC) -o $@ $< $(CFLAGS) -std=c99
 
 clean:
-	rm kilo
+	$(RM) kilo
